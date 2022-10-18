@@ -1,6 +1,6 @@
 package application;
 
-public class MallardDuck extends Duck implements Flyable, Swimable, Quackable {
+public class MallardDuck extends Duck implements FlyWithWings, Swimable, Quackable {
 
 	@Override
 	public String display() {
@@ -16,10 +16,5 @@ public class MallardDuck extends Duck implements Flyable, Swimable, Quackable {
 	public String swim() {
 		return "Mallard a nadar";
 	}
-		 	
-	@Override
-	public String fly() {
-		return "Sto a vuar";
-	}
-	
+
 }

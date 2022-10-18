@@ -123,8 +123,8 @@ public class DuckController {
     @FXML
     void onClickFly(ActionEvent event) {
     	if (selectedDuck != null) {
-    		if (selectedDuck instanceof Flyable) {
-    			lblResult.setText(((Flyable) selectedDuck).fly());
+    		if (selectedDuck instanceof FlyBehavior) {
+    			lblResult.setText(((FlyBehavior) selectedDuck).fly());
     		}
     		else {
     			lblResult.setText("No sei voar");

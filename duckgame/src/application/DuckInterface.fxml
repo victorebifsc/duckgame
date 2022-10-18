@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DuckController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DuckController">
    <children>
       <GridPane hgap="14.0" layoutX="14.0" layoutY="14.0" prefHeight="203.0" prefWidth="335.0" vgap="14.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
         <columnConstraints>
@@ -33,10 +33,10 @@
             </Label>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="14.0" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="btnMallardDuck" mnemonicParsing="false" onAction="#onClickMallardDuck" prefHeight="100.0" prefWidth="100.0" text="Mallard Duck" />
-                  <Button fx:id="btnRedHeadDuck" mnemonicParsing="false" onAction="#onClickRedHeadDuck" prefHeight="100.0" prefWidth="100.0" text="Red Head Duck" />
-                  <Button fx:id="btnRubberDuck" mnemonicParsing="false" onAction="#onClickRubberDuck" prefHeight="100.0" prefWidth="100.0" text="Rubber Duck" />
-                  <Button fx:id="btnDecoyDuck" mnemonicParsing="false" onAction="#onClickDecoyDuck" prefHeight="100.0" prefWidth="100.0" text="Decoy Duck" />
+                  <Button fx:id="btnMallardDuck" mnemonicParsing="false" onAction="#onClickMallardDuck" prefHeight="100.0" prefWidth="100.0" text="Mallard Duck" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="btnRedHeadDuck" mnemonicParsing="false" onAction="#onClickRedHeadDuck" prefHeight="100.0" prefWidth="100.0" text="Red Head Duck" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="btnRubberDuck" mnemonicParsing="false" onAction="#onClickRubberDuck" prefHeight="100.0" prefWidth="100.0" text="Rubber Duck" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="btnDecoyDuck" mnemonicParsing="false" onAction="#onClickDecoyDuck" prefHeight="100.0" prefWidth="100.0" text="Decoy Duck" textAlignment="CENTER" wrapText="true" />
                </children>
             </HBox>
             <Label fx:id="lblDuckType" text="Nenhum pato selecionado" GridPane.rowIndex="3">
@@ -46,10 +46,10 @@
             </Label>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="14.0" GridPane.rowIndex="4">
                <children>
-                  <Button fx:id="btnQuack" mnemonicParsing="false" onAction="#onClickQuack" prefHeight="100.0" prefWidth="100.0" text="Quack" />
-                  <Button fx:id="btnSwim" mnemonicParsing="false" onAction="#onClickSwim" prefHeight="100.0" prefWidth="100.0" text="Swim" />
-                  <Button fx:id="btnDisplay" mnemonicParsing="false" onAction="#onClickDisplay" prefHeight="100.0" prefWidth="100.0" text="Display" />
-                  <Button fx:id="btnFly" mnemonicParsing="false" onAction="#onClickFly" prefHeight="100.0" prefWidth="100.0" text="Fly" />
+                  <Button fx:id="btnQuack" mnemonicParsing="false" onAction="#onClickQuack" prefHeight="100.0" prefWidth="100.0" text="Quack" textAlignment="CENTER" />
+                  <Button fx:id="btnSwim" mnemonicParsing="false" onAction="#onClickSwim" prefHeight="100.0" prefWidth="100.0" text="Swim" textAlignment="CENTER" />
+                  <Button fx:id="btnDisplay" mnemonicParsing="false" onAction="#onClickDisplay" prefHeight="100.0" prefWidth="100.0" text="Display" textAlignment="CENTER" />
+                  <Button fx:id="btnFly" mnemonicParsing="false" onAction="#onClickFly" prefHeight="100.0" prefWidth="100.0" text="Fly" textAlignment="CENTER" />
                </children>
             </HBox>
             <Label fx:id="lblResult" text="..." GridPane.rowIndex="5">

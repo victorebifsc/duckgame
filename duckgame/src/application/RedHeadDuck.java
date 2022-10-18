@@ -1,6 +1,6 @@
 package application;
 
-public class RedHeadDuck extends Duck implements Flyable, Swimable, Quackable{
+public class RedHeadDuck extends Duck implements FlyWithWings, Swimable, Quackable{
 	
 	@Override
 	public String display() {
@@ -15,11 +15,6 @@ public class RedHeadDuck extends Duck implements Flyable, Swimable, Quackable{
 	@Override
 	public String swim() {
 		return "Nadando";
-	}
-
-	@Override
-	public String fly() {
-		return "Tonde iru (voa)";
 	}
 
 }
