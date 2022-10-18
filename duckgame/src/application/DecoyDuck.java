@@ -1,6 +1,6 @@
 package application;
 
-public class DecoyDuck extends Duck {
+public class DecoyDuck extends Duck implements Sink, MuteQuack, FlyNoWay {
 
 	@Override
 	public String display() {

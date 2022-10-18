@@ -46,9 +46,9 @@
             </Label>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="14.0" GridPane.rowIndex="4">
                <children>
+                  <Button fx:id="btnDisplay" mnemonicParsing="false" onAction="#onClickDisplay" prefHeight="100.0" prefWidth="100.0" text="Display" textAlignment="CENTER" />
                   <Button fx:id="btnQuack" mnemonicParsing="false" onAction="#onClickQuack" prefHeight="100.0" prefWidth="100.0" text="Quack" textAlignment="CENTER" />
                   <Button fx:id="btnSwim" mnemonicParsing="false" onAction="#onClickSwim" prefHeight="100.0" prefWidth="100.0" text="Swim" textAlignment="CENTER" />
-                  <Button fx:id="btnDisplay" mnemonicParsing="false" onAction="#onClickDisplay" prefHeight="100.0" prefWidth="100.0" text="Display" textAlignment="CENTER" />
                   <Button fx:id="btnFly" mnemonicParsing="false" onAction="#onClickFly" prefHeight="100.0" prefWidth="100.0" text="Fly" textAlignment="CENTER" />
                </children>
             </HBox>
@@ -57,7 +57,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <ImageView fx:id="imgDuckImage" fitHeight="150.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+            <ImageView fx:id="imgDuckImage" fitHeight="150.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" styleClass="image" GridPane.rowIndex="2">
                <image>
                   <Image url="@../../bin/images/psypato.jpg" />
                </image>

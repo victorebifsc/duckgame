@@ -1,16 +1,6 @@
 package application;
 
-public class RubberDuck extends Duck implements Quackable, Swimable{
-
-	@Override
-	public String swim() {
-		return "Nadando";
-	}
-
-	@Override
-	public String quack() {
-		return "Very Quick";
-	}
+public class RubberDuck extends Duck implements Squeak, Float, FlyNoWay{
 
 	@Override
 	public String display() {
