@@ -60,6 +60,7 @@ public class DuckController {
     void onClickMallardDuck(ActionEvent event) {
     	selectedDuck = mallard;
     	lblDuckType.setText("Mallard Duck selected");
+    	lblResult.setText("...");
     	imgDuckImage.setImage(imgMallard);
     }
     
@@ -67,6 +68,7 @@ public class DuckController {
     void onClickRedHeadDuck(ActionEvent event) {
     	selectedDuck = redHead;
     	lblDuckType.setText("Red Head Duck selected");
+    	lblResult.setText("...");
     	imgDuckImage.setImage(imgRedHead);
     }
     
@@ -74,6 +76,7 @@ public class DuckController {
     void onClickDecoyDuck(ActionEvent event) {
     	selectedDuck = decoy;
     	lblDuckType.setText("Decoy Duck selected");
+    	lblResult.setText("...");
     	imgDuckImage.setImage(imgDecoy);
     }
 
@@ -81,6 +84,7 @@ public class DuckController {
     void onClickRubberDuck(ActionEvent event) {
     	selectedDuck = rubber;
     	lblDuckType.setText("Rubber Duck selected");
+    	lblResult.setText("...");
     	imgDuckImage.setImage(imgRubber);
     }
     
