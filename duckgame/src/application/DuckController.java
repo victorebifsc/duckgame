@@ -93,12 +93,7 @@ public class DuckController {
     @FXML
     void onClickQuack(ActionEvent event) {
     	if (selectedDuck != null) {
-    		if (selectedDuck instanceof QuackBehavior) {
-    			lblResult.setText(((QuackBehavior) selectedDuck).quack());
-    		}
-    		else {
-    			lblResult.setText("Nenhum QuackBehavior Definido");
-    		}
+    			lblResult.setText(selectedDuck.performQuack());
     	}
     	else {
     		lblResult.setText("No duck selected");
@@ -108,31 +103,21 @@ public class DuckController {
     @FXML
     void onClickSwim(ActionEvent event) {
     	if (selectedDuck != null) {
-    		if (selectedDuck instanceof SwimBehavior) {
-    			lblResult.setText(((SwimBehavior) selectedDuck).swim());
-    		}
-    		else {
-    			lblResult.setText("Nenhum SwimBehavior Definido");
-    		}
-    	}
-    	else {
-    		lblResult.setText("No duck selected");
-    	}
+			lblResult.setText(selectedDuck.performSwim());
+	}
+	else {
+		lblResult.setText("No duck selected");
+	}
     }
     
     @FXML
     void onClickFly(ActionEvent event) {
     	if (selectedDuck != null) {
-    		if (selectedDuck instanceof FlyBehavior) {
-    			lblResult.setText(((FlyBehavior) selectedDuck).fly());
-    		}
-    		else {
-    			lblResult.setText("Nenhum FlyBahavior Definido");
-    		}
-    	}
-    	else {
-    		lblResult.setText("No duck selected");
-    	}
+			lblResult.setText(selectedDuck.performFly());
+	}
+	else {
+		lblResult.setText("No duck selected");
+	}
     }
     
     @FXML

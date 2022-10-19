@@ -1,7 +1,10 @@
 package application;
 
-public interface SwimAble extends SwimBehavior{
-	public default String swim() {
+public class SwimAble implements SwimBehavior{
+
+	@Override
+	public String swim() {
 		return "Estou nadando";
 	}
+	
 }

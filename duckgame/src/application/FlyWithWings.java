@@ -1,7 +1,10 @@
 package application;
 
-public interface FlyWithWings extends FlyBehavior{
-	public default String fly() {
-		return "Estou voando";
+public class FlyWithWings implements FlyBehavior {
+
+	@Override
+	public String fly() {
+		return "Estou voando com asas";
 	}
+	
 }
